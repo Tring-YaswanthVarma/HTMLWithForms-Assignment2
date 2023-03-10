@@ -15,11 +15,11 @@ let checkForm = () => {
     let dt = date.value
     console.log(dt)
     let pass = true;
-    if(dt === "" || !(/^[0-9]{4}[\-][0-9]{2}[\-][0-9]{2}$/.test(dt))){
+    if(dt === "" || !(/^\d{4}[\-]\d{2}[\-]\d{2}$/.test(dt))){
         info.textContent = "Enter date format correctly. "
         pass = false
     }
-    if(!/^[1-9][0-9]{9}$/.test(number)){
+    if(!/^[1-9]\d{9}$/.test(number)){
         info.textContent = "Enter 10 numbers and number should not start with 0. Your number length : " + number.length;
         pass = false
     }
