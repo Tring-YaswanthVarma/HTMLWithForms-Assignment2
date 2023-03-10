@@ -15,7 +15,7 @@ let checkForm = () => {
     let dt = date.value
     console.log(dt)
     let pass = true;
-    if(dt === "" || !(/^\d{4}[\-]\d{2}[\-]\d{2}$/.test(dt))){
+    if(dt === "" || !(/^\d{4}\-\d{2}\-\d{2}$/.test(dt))){
         info.textContent = "Enter date format correctly. "
         pass = false
     }
